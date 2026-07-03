@@ -53,7 +53,7 @@ export default function Hero() {
                   src="/pranav.jpg"
                   alt="Pranav — UC Transfer Counselor"
                   fill
-                  className="object-cover object-top saturate-125 brightness-90"
+                  className="object-cover object-center saturate-125 brightness-90"
                   priority
                 />
               </div>
