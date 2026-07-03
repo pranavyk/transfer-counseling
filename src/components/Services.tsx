@@ -50,7 +50,7 @@ export default function Services() {
     <section id="services" className="py-20 px-6 bg-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Services & Pricing</h2>
+          <h2 className="text-3xl font-bold text-[#0b1f4a] mb-4">Services & Pricing</h2>
           <p className="text-lg text-gray-500 max-w-xl mx-auto">
             Clear pricing, no hidden fees. Choose the level of support that fits your situation.
           </p>
@@ -61,37 +61,37 @@ export default function Services() {
               key={s.title}
               className={`rounded-2xl p-8 flex flex-col ${
                 s.highlight
-                  ? "bg-blue-600 text-white shadow-xl shadow-blue-200 scale-105"
+                  ? "bg-[#0b1f4a] text-white shadow-xl shadow-blue-900/20 scale-105"
                   : "bg-gray-50 text-gray-900 border border-gray-200"
               }`}
             >
               <div className="mb-6">
-                <h3 className={`font-semibold text-lg mb-1 ${s.highlight ? "text-white" : "text-gray-900"}`}>
+                <h3 className={`font-semibold text-lg mb-1 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`}>
                   {s.title}
                 </h3>
-                <div className={`text-4xl font-bold mb-3 ${s.highlight ? "text-white" : "text-gray-900"}`}>
+                <div className={`text-4xl font-bold mb-3 ${s.highlight ? "text-white" : "text-[#0b1f4a]"}`}>
                   {s.price}
                 </div>
-                <p className={`text-sm ${s.highlight ? "text-blue-100" : "text-gray-500"}`}>
+                <p className={`text-sm ${s.highlight ? "text-blue-200" : "text-gray-500"}`}>
                   {s.description}
                 </p>
               </div>
               <ul className="space-y-3 flex-1 mb-8">
                 {s.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
-                    <svg className={`w-4 h-4 mt-0.5 shrink-0 ${s.highlight ? "text-blue-200" : "text-blue-600"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-4 h-4 mt-0.5 shrink-0 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className={s.highlight ? "text-blue-50" : "text-gray-600"}>{f}</span>
+                    <span className={s.highlight ? "text-blue-100" : "text-gray-600"}>{f}</span>
                   </li>
                 ))}
               </ul>
               <a
                 href="#contact"
-                className={`block text-center py-3 rounded-xl font-medium transition-colors ${
+                className={`block text-center py-3 rounded-xl font-semibold transition-colors ${
                   s.highlight
-                    ? "bg-white text-blue-600 hover:bg-blue-50"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
+                    ? "bg-yellow-400 text-[#0b1f4a] hover:bg-yellow-300"
+                    : "bg-[#0b1f4a] text-white hover:bg-[#0d2660]"
                 }`}
               >
                 {s.cta}

@@ -11,8 +11,8 @@ export async function POST(req: NextRequest) {
   }
 
   const { error } = await resend.emails.send({
-    from: "TransferPro <noreply@YOUR_DOMAIN.com>",
-    to: "YOUR_EMAIL@gmail.com",
+    from: "P2Transfers <noreply@YOUR_DOMAIN.com>",
+    to: "pranavyk@gmail.com",
     replyTo: email,
     subject: `New inquiry from ${name}`,
     html: `

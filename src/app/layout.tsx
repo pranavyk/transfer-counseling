@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "UC Transfer Counseling | Cupertino",
+  title: "P2Transfers | UC Transfer Counseling",
   description: "Expert UC transfer counseling from a UCSD grad accepted to Berkeley, UCSD & UIUC. Personalized help for Bay Area students.",
 };
 
