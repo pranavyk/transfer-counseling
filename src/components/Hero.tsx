@@ -72,7 +72,7 @@ export default function Hero() {
                 <div className="text-xs text-stone-400 mt-0.5 leading-tight">T10 acceptances,<br/>selective majors</div>
               </div>
               <div className="bg-yellow-400 rounded-xl p-4 text-center">
-                <div className="text-xs font-semibold text-[#0b1f4a] leading-relaxed">CS · Math<br/>Cog Sci · Psych</div>
+                <div className="text-xs font-semibold text-[#0b1f4a] leading-relaxed">CS · Math · CE<br/>Cog Sci · Psych</div>
                 <div className="text-xs text-[#0b1f4a]/70 mt-1">specialized</div>
               </div>
             </div>
