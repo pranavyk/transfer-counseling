@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
   const { name, email, phone, message, service } = await req.json();
 
@@ -10,8 +8,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
   }
 
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   const { error } = await resend.emails.send({
-    from: "P2Transfers <noreply@YOUR_DOMAIN.com>",
+    from: "P2Transfers <onboarding@resend.dev>",
     to: "pranavyk@gmail.com",
     replyTo: email,
     subject: `New inquiry from ${name}`,
