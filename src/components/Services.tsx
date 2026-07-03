@@ -1,106 +1,116 @@
 const services = [
   {
-    title: "Starter Package",
+    title: "Starter Session",
     price: "$299",
-    description: "Perfect for students just starting to explore the transfer path.",
+    tag: "Good starting point",
+    description: "Not sure where you stand or what you need? We map everything out together in one focused session.",
     features: [
-      "1-hour strategy session",
-      "UC eligibility assessment",
-      "Campus & major fit analysis",
+      "1-hour 1:1 strategy session",
+      "UC eligibility + GPA assessment",
+      "Campus and major fit analysis",
       "Personalized transfer roadmap",
-      "Email follow-up Q&A (1 week)",
+      "1 week of follow-up email Q&A",
     ],
     highlight: false,
-    cta: "Get Started",
   },
   {
-    title: "Full Application Package",
+    title: "Full Application",
     price: "$899",
-    description: "End-to-end support through your entire UC application cycle.",
+    tag: "Most students choose this",
+    description: "From first draft to submission. I help you write compelling PIQs and put together the strongest possible application.",
     features: [
       "Everything in Starter",
-      "All 4 Personal Insight Question essays",
-      "TAG application guidance",
-      "Major prep & prerequisite planning",
+      "All 4 Personal Insight Questions — drafted, workshopped, finalized",
+      "TAG guidance for eligible campuses",
+      "Major prep and prerequisite planning",
+      "Application review before you submit",
       "3 months of email support",
-      "Application review before submission",
     ],
     highlight: true,
-    cta: "Most Popular",
   },
   {
-    title: "Premium — Full Year",
+    title: "Full Year",
     price: "$1,999",
-    description: "White-glove support from community college through acceptance.",
+    tag: "For early planners",
+    description: "Start from the beginning of your CC journey and have me with you through acceptance — course selection, GPA strategy, the works.",
     features: [
       "Everything in Full Application",
+      "Semester-by-semester course planning",
+      "GPA recovery strategy if needed",
       "Unlimited 1:1 sessions",
-      "Course selection each semester",
-      "GPA recovery strategy",
-      "Waitlist & appeal letters",
-      "Priority response (24hr)",
+      "Waitlist and appeal letters",
+      "Priority 24-hr response",
     ],
     highlight: false,
-    cta: "Apply Now",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 px-6 bg-white">
+    <section id="services" className="py-24 px-6 bg-[#dde6f4]">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-bold text-[#0b1f4a] mb-4">Services & Pricing</h2>
-          <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            Clear pricing, no hidden fees. Choose the level of support that fits your situation.
+        <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-4">How I can help</p>
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
+          <h2 className="font-serif text-4xl font-semibold text-[#0b1f4a] max-w-sm leading-snug">
+            Pick the level of support you need.
+          </h2>
+          <p className="text-stone-500 text-sm max-w-xs">
+            All packages include a free 30-min intro call so we can make sure it&apos;s the right fit.
           </p>
         </div>
+
         <div className="grid md:grid-cols-3 gap-6">
           {services.map((s) => (
             <div
               key={s.title}
-              className={`rounded-2xl p-8 flex flex-col ${
+              className={`rounded-2xl p-7 flex flex-col ${
                 s.highlight
-                  ? "bg-[#0b1f4a] text-white shadow-xl shadow-blue-900/20 scale-105"
-                  : "bg-gray-50 text-gray-900 border border-gray-200"
+                  ? "bg-[#0b1f4a] ring-2 ring-yellow-400"
+                  : "bg-[#f5f8fd] border border-blue-100"
               }`}
             >
               <div className="mb-6">
-                <h3 className={`font-semibold text-lg mb-1 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`}>
+                <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${
+                  s.highlight ? "bg-yellow-400 text-[#0b1f4a]" : "bg-stone-200 text-stone-600"
+                }`}>
+                  {s.tag}
+                </span>
+                <h3 className={`font-serif text-xl font-semibold mt-4 mb-1 ${s.highlight ? "text-white" : "text-[#0b1f4a]"}`}>
                   {s.title}
                 </h3>
-                <div className={`text-4xl font-bold mb-3 ${s.highlight ? "text-white" : "text-[#0b1f4a]"}`}>
+                <div className={`text-3xl font-semibold mb-3 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`}>
                   {s.price}
                 </div>
-                <p className={`text-sm ${s.highlight ? "text-blue-200" : "text-gray-500"}`}>
+                <p className={`text-sm leading-relaxed ${s.highlight ? "text-blue-200" : "text-stone-500"}`}>
                   {s.description}
                 </p>
               </div>
-              <ul className="space-y-3 flex-1 mb-8">
+
+              <ul className="space-y-2.5 flex-1 mb-7">
                 {s.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
-                    <svg className={`w-4 h-4 mt-0.5 shrink-0 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className={s.highlight ? "text-blue-100" : "text-gray-600"}>{f}</span>
+                    <span className={`mt-1 text-xs ${s.highlight ? "text-yellow-400" : "text-yellow-500"}`}>✦</span>
+                    <span className={s.highlight ? "text-blue-100" : "text-stone-600"}>{f}</span>
                   </li>
                 ))}
               </ul>
+
               <a
                 href="#contact"
-                className={`block text-center py-3 rounded-xl font-semibold transition-colors ${
+                className={`block text-center py-3 rounded-full text-sm font-medium transition-colors ${
                   s.highlight
                     ? "bg-yellow-400 text-[#0b1f4a] hover:bg-yellow-300"
                     : "bg-[#0b1f4a] text-white hover:bg-[#0d2660]"
                 }`}
               >
-                {s.cta}
+                Get started
               </a>
             </div>
           ))}
         </div>
-        <p className="text-center text-sm text-gray-400 mt-8">
-          Payment plans available. All packages include a free 30-min intro call.
+
+        <p className="text-center text-sm text-stone-400 mt-8">
+          Payment plans available on request.
         </p>
       </div>
     </section>

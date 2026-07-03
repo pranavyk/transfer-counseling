@@ -1,75 +1,59 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 bg-gray-50">
+    <section id="about" className="py-24 px-6 bg-[#eef2f9]">
       <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+
+        {/* Section label */}
+        <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-4">About me</p>
+
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <h2 className="text-3xl font-bold text-[#0b1f4a] mb-6">Why work with me?</h2>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              I grew up in Cupertino and went through exactly what your student is facing right now —
-              the pressure, the uncertainty, the sense that the window is closing.
-            </p>
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              As a transfer applicant, I was accepted to <strong className="text-[#0b1f4a]">UC Berkeley, UCSD, and UIUC</strong>.
-              I know the process inside out — what the readers actually look for in Personal Insight
-              Questions, how to position a GPA that isn&apos;t perfect, which TAGs are worth pursuing,
-              and how to choose the right major and campus combination.
-            </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              I&apos;m not a company. You work directly with me, one-on-one. I know the Bay Area
-              community college landscape — De Anza, Foothill, Ohlone — and I know what works.
-            </p>
-            <div className="flex flex-col gap-3">
-              {[
-                "Accepted: UC Berkeley, UCSD, UIUC",
-                "Graduated from UCSD",
-                "Bay Area local — Cupertino based",
-                "Familiar with De Anza, Foothill, Ohlone",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-3">
-                  <div className="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center shrink-0">
-                    <svg className="w-3 h-3 text-[#0b1f4a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                    </svg>
-                  </div>
-                  <span className="text-sm text-gray-700">{item}</span>
-                </div>
-              ))}
+            <h2 className="font-serif text-4xl font-semibold text-[#0b1f4a] leading-snug mb-6">
+              I&apos;m not a counseling firm.<br />I&apos;m one person who did this.
+            </h2>
+            <div className="space-y-4 text-stone-600 leading-relaxed">
+              <p>
+                I grew up in Sunnyvale, navigated the CC system, and applied to the UCs as a transfer student.
+                I got into <strong className="text-[#0b1f4a]">UC Berkeley, UCSD, UIUC, and two other top programs</strong> and graduated from UCSD with a degree in Math and CS.
+              </p>
+              <p>
+                What made the difference was strategy. I spread coursework deliberately across 5 colleges, kept costs low, and stacked every advantage the system allows: IGETC, TAG, articulation agreements, and the right major and campus combinations for my profile.
+              </p>
+              <p>
+                When you work with me, you work with <em>me</em>, not a junior counselor at a big company.
+                I know the Bay Area CC landscape because I studied in it. I know what Berkeley and UCSD actually look for because I wrote the essays that got me in.
+              </p>
             </div>
           </div>
-          <div className="bg-[#0b1f4a] rounded-2xl p-8 text-white">
-            <div className="text-5xl font-bold text-yellow-400 mb-2">100%</div>
-            <div className="text-white font-semibold mb-1">First-hand experience</div>
-            <div className="text-blue-300 text-sm mb-8">Not theory — I did this myself.</div>
-            <div className="space-y-6">
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-blue-200">UC Application Strategy</span>
-                  <span className="font-medium text-yellow-400">Expert</span>
-                </div>
-                <div className="h-2 bg-white/10 rounded-full">
-                  <div className="h-2 bg-yellow-400 rounded-full w-[95%]" />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-blue-200">Personal Insight Questions</span>
-                  <span className="font-medium text-yellow-400">Expert</span>
-                </div>
-                <div className="h-2 bg-white/10 rounded-full">
-                  <div className="h-2 bg-yellow-400 rounded-full w-[93%]" />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-blue-200">Bay Area CC Curriculum</span>
-                  <span className="font-medium text-yellow-400">Expert</span>
-                </div>
-                <div className="h-2 bg-white/10 rounded-full">
-                  <div className="h-2 bg-yellow-400 rounded-full w-[90%]" />
+
+          {/* Credential callouts */}
+          <div className="space-y-4 pt-2">
+            {[
+              {
+                heading: "Accepted to Berkeley, UCSD & UIUC",
+                body: "As a transfer, not a freshman. I know exactly what the application looks like from a CC student's perspective, including the parts no one talks about.",
+              },
+              {
+                heading: "Graduated from UCSD",
+                body: "Class of 2026. I can speak to what the campus is actually like, what majors are competitive, and how to thrive once you're there.",
+              },
+              {
+                heading: "Sunnyvale local",
+                body: "I know the Bay Area CC system from the inside. I used De Anza, Foothill, and three other colleges strategically to build the strongest possible transfer application at the lowest possible cost.",
+              },
+              {
+                heading: "One-on-one only",
+                body: "I take a limited number of students each cycle intentionally. You get direct access to me, not an intake form.",
+              },
+            ].map((item) => (
+              <div key={item.heading} className="flex gap-4 p-5 bg-[#f5f8fd] border border-blue-100 rounded-2xl shadow-sm">
+                <div className="w-1.5 rounded-full bg-yellow-400 shrink-0 self-stretch" />
+                <div>
+                  <div className="font-semibold text-[#0b1f4a] mb-1">{item.heading}</div>
+                  <div className="text-stone-500 text-sm leading-relaxed">{item.body}</div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
