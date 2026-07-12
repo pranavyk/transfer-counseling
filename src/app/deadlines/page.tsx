@@ -104,17 +104,17 @@ const faqs = [
 
 export default function DeadlinesPage() {
   return (
-    <div className="min-h-screen bg-[#eef2f9]">
+    <div className="min-h-screen bg-[#faf7f0]">
       <Nav />
 
       {/* Hero */}
-      <section className="pt-36 pb-16 px-6 bg-[#eef2f9] border-b border-blue-100">
+      <section className="pt-36 pb-16 px-6 bg-[#faf7f0] border-b border-[#e8d5b5]">
         <div className="max-w-5xl mx-auto">
-          <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-4">Updated for 2026–2027</p>
-          <h1 className="font-serif text-5xl font-semibold text-[#0b1f4a] mb-4 max-w-2xl leading-tight">
-            UC Transfer Timelines & Info
+          <p className="text-xs text-[#b0927a] tracking-widest uppercase mb-6">Updated for 2026–2027</p>
+          <h1 className="font-serif text-5xl md:text-7xl font-semibold text-[#2a1408] mb-6 leading-[0.95]">
+            Timelines<br /><span className="italic">& Info.</span>
           </h1>
-          <p className="text-stone-500 text-lg max-w-2xl leading-relaxed">
+          <p className="text-[#8a6050] text-lg max-w-xl leading-relaxed">
             The dates you need, what they mean, and what to do each semester.
             Compiled from my own experience going through this process.
           </p>
@@ -122,7 +122,7 @@ export default function DeadlinesPage() {
       </section>
 
       {/* At a Glance */}
-      <section className="py-10 px-6 bg-[#0b1f4a]">
+      <section className="py-10 px-6 bg-[#2a1408]">
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
             { stat: "Nov 1–30", label: "UC Application Window" },
@@ -131,28 +131,28 @@ export default function DeadlinesPage() {
             { stat: "May 1", label: "SIR Deadline" },
           ].map((s) => (
             <div key={s.label} className="text-center py-4">
-              <div className="font-serif text-2xl font-semibold text-yellow-400 mb-1">{s.stat}</div>
-              <div className="text-blue-200 text-xs">{s.label}</div>
+              <div className="font-serif text-2xl font-semibold text-[#c4714a] mb-1">{s.stat}</div>
+              <div className="text-[#c9b8a8] text-xs">{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* Timeline */}
-      <section className="py-16 px-6 bg-[#eef2f9]">
+      <section className="py-16 px-6 bg-[#faf7f0]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-8">Month by month</p>
+          <p className="text-[#c4714a] font-medium text-sm tracking-widest uppercase mb-8">Month by month</p>
           <div className="relative">
-            <div className="absolute left-4 top-2 bottom-2 w-px bg-stone-200" />
+            <div className="absolute left-4 top-2 bottom-2 w-px bg-[#e8d5b5]" />
             <div className="space-y-10">
               {timeline.map((month) => (
                 <div key={month.month + month.year} className="relative pl-12">
-                  <div className="absolute left-0 w-8 h-8 rounded-full bg-[#0b1f4a] flex items-center justify-center ring-4 ring-[#eef2f9]">
-                    <div className="w-2 h-2 rounded-full bg-yellow-400" />
+                  <div className="absolute left-0 w-8 h-8 rounded-full bg-[#2a1408] flex items-center justify-center ring-4 ring-[#faf7f0]">
+                    <div className="w-2 h-2 rounded-full bg-[#c4714a]" />
                   </div>
                   <div className="mb-3">
-                    <span className="font-serif font-semibold text-[#0b1f4a] text-xl">{month.month}</span>
-                    <span className="text-stone-400 text-sm ml-2">{month.year}</span>
+                    <span className="font-serif font-semibold text-[#2a1408] text-xl">{month.month}</span>
+                    <span className="text-[#b0927a] text-sm ml-2">{month.year}</span>
                   </div>
                   <div className="space-y-2.5">
                     {month.items.map((item) => (
@@ -160,19 +160,19 @@ export default function DeadlinesPage() {
                         key={item.label}
                         className={`rounded-xl p-4 border ${
                           item.important
-                            ? "bg-yellow-50 border-yellow-200"
-                            : "bg-white border-blue-100"
+                            ? "bg-[#c4714a]/10 border-[#c4714a]/30"
+                            : "bg-[#f0e8d8] border-[#e8d5b5]"
                         }`}
                       >
                         <div className="flex items-start gap-2.5">
                           {item.important && (
-                            <span className="bg-yellow-400 text-[#0b1f4a] text-xs font-semibold px-2 py-0.5 rounded-full shrink-0 mt-0.5">
+                            <span className="bg-[#c4714a] text-white text-xs font-semibold px-2 py-0.5 rounded-full shrink-0 mt-0.5">
                               KEY
                             </span>
                           )}
                           <div>
-                            <div className="font-medium text-[#0b1f4a] text-sm">{item.label}</div>
-                            <div className="text-stone-500 text-sm mt-0.5">{item.detail}</div>
+                            <div className="font-medium text-[#2a1408] text-sm">{item.label}</div>
+                            <div className="text-[#8a6050] text-sm mt-0.5">{item.detail}</div>
                           </div>
                         </div>
                       </div>
@@ -186,15 +186,15 @@ export default function DeadlinesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-6 bg-white border-t border-blue-100">
+      <section className="py-16 px-6 bg-[#f0e8d8] border-t border-[#e8d5b5]">
         <div className="max-w-3xl mx-auto">
-          <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-4">Common questions</p>
-          <h2 className="font-serif text-3xl font-semibold text-[#0b1f4a] mb-10">Things I get asked all the time.</h2>
+          <p className="text-[#c4714a] font-medium text-sm tracking-widest uppercase mb-4">Common questions</p>
+          <h2 className="font-serif text-3xl font-semibold text-[#2a1408] mb-10">Things I get asked all the time.</h2>
           <div className="space-y-4">
             {faqs.map((faq) => (
-              <div key={faq.q} className="border border-blue-100 rounded-2xl p-6 bg-[#eef2f9]">
-                <h3 className="font-semibold text-[#0b1f4a] mb-2">{faq.q}</h3>
-                <p className="text-stone-500 text-sm leading-relaxed">{faq.a}</p>
+              <div key={faq.q} className="border border-[#e8d5b5] rounded-2xl p-6 bg-[#faf7f0]">
+                <h3 className="font-semibold text-[#2a1408] mb-2">{faq.q}</h3>
+                <p className="text-[#8a6050] text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -202,15 +202,15 @@ export default function DeadlinesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 bg-[#0b1f4a]">
+      <section className="py-16 px-6 bg-[#2a1408]">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-serif text-3xl font-semibold text-white mb-3">Still have questions?</h2>
-          <p className="text-blue-200 mb-8">
+          <h2 className="font-serif text-3xl font-semibold text-[#faf7f0] mb-3">Still have questions?</h2>
+          <p className="text-[#c9b8a8] mb-8">
             Every student&apos;s situation is different. Let&apos;s talk through yours.
           </p>
           <a
             href="/#contact"
-            className="inline-block bg-yellow-400 text-[#0b1f4a] px-8 py-3.5 rounded-full font-medium hover:bg-yellow-300 transition-colors"
+            className="inline-block bg-[#7ab4d4] text-[#1e1208] px-8 py-3.5 rounded-full font-semibold hover:bg-[#8fc4e4] transition-colors"
           >
             Book a free intro call
           </a>

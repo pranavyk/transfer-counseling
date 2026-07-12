@@ -1,117 +1,110 @@
+function ShipWheel({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="22" stroke="currentColor" strokeWidth="2" />
+      <circle cx="24" cy="24" r="5" stroke="currentColor" strokeWidth="2" />
+      {/* Spokes — 8 at 45° intervals */}
+      {Array.from({ length: 8 }).map((_, i) => {
+        const angle = (i * 45 * Math.PI) / 180;
+        const x1 = 24 + 7 * Math.cos(angle);
+        const y1 = 24 + 7 * Math.sin(angle);
+        const x2 = 24 + 19 * Math.cos(angle);
+        const y2 = 24 + 19 * Math.sin(angle);
+        return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="2" strokeLinecap="round" />;
+      })}
+      {/* Handle pegs on rim */}
+      {Array.from({ length: 8 }).map((_, i) => {
+        const angle = (i * 45 * Math.PI) / 180;
+        const cx = 24 + 22 * Math.cos(angle);
+        const cy = 24 + 22 * Math.sin(angle);
+        return <circle key={i} cx={cx} cy={cy} r="1.5" fill="currentColor" />;
+      })}
+    </svg>
+  );
+}
+
 const services = [
   {
     title: "Starter Session",
     price: "$299",
     tag: "Good starting point",
-    description: "Not sure where you stand or what you need? We map everything out together in one focused session.",
-    features: [
-      "1-hour 1:1 strategy session",
-      "UC eligibility + GPA assessment",
-      "Campus and major fit analysis",
-      "Personalized transfer roadmap",
-      "1 week of follow-up email Q&A",
-    ],
-    highlight: false,
+    description: "One focused hour to map your situation, assess UC eligibility, find your best campus and major combos, and leave with a clear roadmap.",
+    features: ["1-hour 1:1 strategy session", "UC eligibility + GPA assessment", "Campus and major fit analysis", "1 week of follow-up email Q&A"],
   },
   {
     title: "Full Application",
     price: "$899",
     tag: "Most students choose this",
-    description: "From first draft to submission. I help you write compelling PIQs and put together the strongest possible application.",
-    features: [
-      "Everything in Starter",
-      "All 4 Personal Insight Questions — drafted, workshopped, finalized",
-      "TAG guidance for eligible campuses",
-      "Major prep and prerequisite planning",
-      "Application review before you submit",
-      "3 months of email support",
-    ],
-    highlight: true,
+    description: "From first draft to submission. All 4 PIQs, TAG guidance, prerequisite planning, and a full review before you hit submit.",
+    features: ["Everything in Starter", "All 4 Personal Insight Questions — drafted, workshopped, finalized", "TAG guidance for eligible campuses", "Application review before you submit", "3 months of email support"],
   },
   {
     title: "Full Year",
     price: "$1,999",
     tag: "For early planners",
     description: "Start from the beginning of your CC journey and have me with you through acceptance — course selection, GPA strategy, the works.",
-    features: [
-      "Everything in Full Application",
-      "Semester-by-semester course planning",
-      "GPA recovery strategy if needed",
-      "Unlimited 1:1 sessions",
-      "Waitlist and appeal letters",
-      "Priority 24-hr response",
-    ],
-    highlight: false,
+    features: ["Everything in Full Application", "Semester-by-semester course planning", "GPA recovery strategy if needed", "Unlimited 1:1 sessions", "Waitlist and appeal letters", "Priority 24-hr response"],
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-[#dde6f4]">
+    <section id="services" className="py-24 px-6 bg-[#f0e8d8]">
       <div className="max-w-5xl mx-auto">
-        <p className="text-yellow-600 font-medium text-sm tracking-widest uppercase mb-4">How I can help</p>
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-14">
-          <h2 className="font-serif text-4xl font-semibold text-[#0b1f4a] max-w-sm leading-snug">
-            Pick the level of support you need.
-          </h2>
-          <p className="text-stone-500 text-sm max-w-xs">
-            All packages include a free 30-min intro call so we can make sure it&apos;s the right fit.
+
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16 border-b border-[#2a1408]/10 pb-10">
+          <div className="flex items-center gap-4">
+            <ShipWheel className="w-10 h-10 text-[#c4714a] shrink-0" />
+            <h2 className="font-serif text-5xl md:text-6xl font-semibold text-[#2a1408] leading-[0.95]">
+              How I<br /><span className="italic">can help.</span>
+            </h2>
+          </div>
+          <p className="text-[#8a6050] text-sm max-w-xs">
+            All packages include a free 30-min intro call. Payment plans available on request.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div
-              key={s.title}
-              className={`rounded-2xl p-7 flex flex-col ${
-                s.highlight
-                  ? "bg-[#0b1f4a] ring-2 ring-yellow-400"
-                  : "bg-[#f5f8fd] border border-blue-100"
-              }`}
-            >
-              <div className="mb-6">
-                <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${
-                  s.highlight ? "bg-yellow-400 text-[#0b1f4a]" : "bg-stone-200 text-stone-600"
-                }`}>
-                  {s.tag}
-                </span>
-                <h3 className={`font-serif text-xl font-semibold mt-4 mb-1 ${s.highlight ? "text-white" : "text-[#0b1f4a]"}`}>
-                  {s.title}
-                </h3>
-                <div className={`text-3xl font-semibold mb-3 ${s.highlight ? "text-yellow-400" : "text-[#0b1f4a]"}`}>
-                  {s.price}
-                </div>
-                <p className={`text-sm leading-relaxed ${s.highlight ? "text-blue-200" : "text-stone-500"}`}>
-                  {s.description}
-                </p>
+        <div className="divide-y divide-[#2a1408]/10">
+          {services.map((s, i) => (
+            <div key={s.title} className="group py-10 grid md:grid-cols-12 gap-6 items-start">
+              {/* Index */}
+              <div className="hidden md:block md:col-span-1">
+                <span className="font-serif text-[#c4714a]/40 text-2xl">{String(i + 1).padStart(2, "0")}</span>
               </div>
 
-              <ul className="space-y-2.5 flex-1 mb-7">
-                {s.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm">
-                    <span className={`mt-1 text-xs ${s.highlight ? "text-yellow-400" : "text-yellow-500"}`}>✦</span>
-                    <span className={s.highlight ? "text-blue-100" : "text-stone-600"}>{f}</span>
-                  </li>
-                ))}
-              </ul>
+              {/* Title + tag */}
+              <div className="md:col-span-3">
+                <span className="text-xs font-medium text-[#7a9e7e] uppercase tracking-widest">{s.tag}</span>
+                <h3 className="font-serif text-2xl font-semibold text-[#2a1408] mt-1">{s.title}</h3>
+              </div>
 
-              <a
-                href="#contact"
-                className={`block text-center py-3 rounded-full text-sm font-medium transition-colors ${
-                  s.highlight
-                    ? "bg-yellow-400 text-[#0b1f4a] hover:bg-yellow-300"
-                    : "bg-[#0b1f4a] text-white hover:bg-[#0d2660]"
-                }`}
-              >
-                Get started
-              </a>
+              {/* Description + features */}
+              <div className="md:col-span-5">
+                <p className="text-[#8a6050] text-sm leading-relaxed mb-4">{s.description}</p>
+                <ul className="space-y-1.5">
+                  {s.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-[#6b4f38]">
+                      <span className="text-[#c4714a] mt-0.5 text-xs shrink-0">✦</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Price + CTA */}
+              <div className="md:col-span-3 flex flex-col items-start md:items-end gap-3">
+                <div className="font-serif text-4xl font-semibold text-[#2a1408]">{s.price}</div>
+                <a
+                  href="#contact"
+                  className="bg-[#7ab4d4] text-[#1e1208] text-sm px-6 py-2.5 font-semibold hover:bg-[#8fc4e4] transition-colors rounded-full"
+                >
+                  Get started
+                </a>
+              </div>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-sm text-stone-400 mt-8">
-          Payment plans available on request.
-        </p>
       </div>
     </section>
   );
