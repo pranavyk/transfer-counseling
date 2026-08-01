@@ -42,8 +42,8 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <TreeOfLife className="w-10 h-10 text-[#7a9e7e] shrink-0" />
+            <div className="flex items-start gap-3 mb-8">
+              <TreeOfLife className="w-10 h-10 text-[#7a9e7e] shrink-0 mt-2" />
               <h2 className="font-serif text-5xl md:text-6xl font-semibold text-[#2a1408] leading-[0.95]">
                 Not a firm.<br /><span className="italic">One person</span><br />who did this.
               </h2>

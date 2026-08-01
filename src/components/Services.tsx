@@ -53,8 +53,8 @@ export default function Services() {
       <div className="max-w-5xl mx-auto">
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16 border-b border-[#2a1408]/10 pb-10">
-          <div className="flex items-center gap-4">
-            <ShipWheel className="w-10 h-10 text-[#c4714a] shrink-0" />
+          <div className="flex items-start gap-4">
+            <ShipWheel className="w-10 h-10 text-[#c4714a] shrink-0 mt-2" />
             <h2 className="font-serif text-5xl md:text-6xl font-semibold text-[#2a1408] leading-[0.95]">
               How I<br /><span className="italic">can help.</span>
             </h2>

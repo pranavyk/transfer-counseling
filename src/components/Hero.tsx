@@ -15,8 +15,8 @@ export default function Hero() {
         </div>
 
         {/* Giant headline + photo */}
-        <div className="relative">
-          <h1 className="font-serif text-[clamp(3rem,10vw,7rem)] font-semibold text-[#2a1408] leading-[0.95] tracking-tight mb-0 relative z-10">
+        <div className="relative md:min-h-[380px]">
+          <h1 className="font-serif text-[clamp(3rem,8vw,7rem)] font-semibold text-[#2a1408] leading-[0.95] tracking-tight mb-0 relative z-10 md:pr-72">
             I got into<br />
             <span className="italic text-[#c4714a]">Berkeley</span><br />
             as a transfer.
@@ -49,9 +49,6 @@ export default function Hero() {
             I&apos;m Pranav. I got into UC Berkeley, UCSD, UIUC, and two other top programs by deliberately spreading coursework across 5 colleges to stack every advantage the system allows. Now I help Bay Area students do the same thing, one-on-one.
           </p>
           <div className="flex flex-col gap-4">
-            <blockquote className="font-serif text-xl italic text-[#2a1408]/70 leading-snug">
-              &ldquo;Rejection is redirection. Let&apos;s walk the smarter path.&rdquo;
-            </blockquote>
             <div className="flex gap-3 flex-wrap">
               <a href="/#contact" className="bg-[#7ab4d4] text-[#1e1208] px-6 py-3 text-sm font-semibold hover:bg-[#8fc4e4] transition-colors rounded-full">
                 Work with me
