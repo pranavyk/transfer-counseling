@@ -21,8 +21,8 @@ const timeline = [
     month: "September",
     year: "2027",
     items: [
-      { label: "TAG Deadline", detail: "September 30 — TAG applications must be submitted by end of month", important: true },
-      { label: "Fall semester in full swing", detail: "Your fall grades matter — prioritize coursework now", important: false },
+      { label: "TAG Deadline", detail: "September 30. TAG applications must be submitted by end of month.", important: true },
+      { label: "Fall semester in full swing", detail: "Your fall grades matter. Prioritize coursework now.", important: false },
     ],
   },
   {
@@ -38,14 +38,14 @@ const timeline = [
     year: "2027",
     items: [
       { label: "UC Application Window", detail: "November 1–30: Submit your UC application. Do not wait until November 30.", important: true },
-      { label: "Application Deadline", detail: "November 30 at 11:59 PM PT — hard deadline, no exceptions", important: true },
+      { label: "Application Deadline", detail: "November 30 at 11:59 PM PT. Hard deadline, no exceptions.", important: true },
     ],
   },
   {
     month: "December–January",
     year: "2026–27",
     items: [
-      { label: "Transcripts Due", detail: "Official transcripts may be requested by individual campuses — check your UC portal", important: false },
+      { label: "Transcripts Due", detail: "Official transcripts may be requested by individual campuses. Check your UC portal.", important: false },
       { label: "Additional Info Requests", detail: "Some campuses may request supplemental materials or additional essays", important: false },
     ],
   },
@@ -54,7 +54,7 @@ const timeline = [
     year: "2027",
     items: [
       { label: "Admission Decisions Released", detail: "UC decisions typically released March–April. Check your MyAdmissions portal.", important: true },
-      { label: "Statement of Intent to Register (SIR)", detail: "May 1 deadline — commit to your school and pay the enrollment deposit", important: true },
+      { label: "Statement of Intent to Register (SIR)", detail: "May 1 deadline. Commit to your school and pay the enrollment deposit.", important: true },
     ],
   },
   {
@@ -62,7 +62,7 @@ const timeline = [
     year: "2027",
     items: [
       { label: "SIR Deadline", detail: "Submit your Statement of Intent to Register. Missing this forfeits your spot.", important: true },
-      { label: "Final Transcripts", detail: "Submit final transcripts after spring semester ends — usually by July 1", important: false },
+      { label: "Final Transcripts", detail: "Submit final transcripts after spring semester ends, usually by July 1.", important: false },
     ],
   },
 ];
@@ -82,7 +82,7 @@ const faqs = [
   },
   {
     q: "What are Personal Insight Questions?",
-    a: "UC's version of college essays. You answer 4 out of 8 prompts, each 350 words max. These are critical — they're one of the few ways to differentiate yourself beyond GPA.",
+    a: "UC's version of college essays. You answer 4 out of 8 prompts, each 350 words max. These are critical. They're one of the few ways to actually differentiate yourself beyond GPA.",
   },
   {
     q: "Can I transfer as a junior or senior?",
@@ -90,7 +90,7 @@ const faqs = [
   },
   {
     q: "What is IGETC?",
-    a: "Intersegmental General Education Transfer Curriculum — a standardized set of lower-division GE courses you can complete at a California community college that satisfies GE requirements at any UC. Completing IGETC before transfer is highly recommended.",
+    a: "Intersegmental General Education Transfer Curriculum. It's a standardized set of lower-division GE courses you can complete at a California community college that satisfies GE requirements at any UC. Completing IGETC before transfer is highly recommended.",
   },
   {
     q: "Does my community college major matter?",

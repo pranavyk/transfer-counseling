@@ -36,13 +36,13 @@ const services = [
     price: "$899",
     tag: "Most students choose this",
     description: "From first draft to submission. All 4 PIQs, TAG guidance, prerequisite planning, and a full review before you hit submit.",
-    features: ["Everything in Starter", "All 4 Personal Insight Questions — drafted, workshopped, finalized", "TAG guidance for eligible campuses", "Application review before you submit", "3 months of email support"],
+    features: ["Everything in Starter", "All 4 Personal Insight Questions: drafted, workshopped, and finalized", "TAG guidance for eligible campuses", "Application review before you submit", "3 months of email support"],
   },
   {
     title: "Full Year",
     price: "$1,999",
     tag: "For early planners",
-    description: "Start from the beginning of your CC journey and have me with you through acceptance — course selection, GPA strategy, the works.",
+    description: "Start from the beginning of your CC journey and have me with you all the way through acceptance: course selection, GPA strategy, the works.",
     features: ["Everything in Full Application", "Semester-by-semester course planning", "GPA recovery strategy if needed", "Unlimited 1:1 sessions", "Waitlist and appeal letters", "Priority 24-hr response"],
   },
 ];

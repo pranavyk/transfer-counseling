@@ -2,32 +2,32 @@ const testimonials = [
   {
     quote: "I had a 3.4 GPA and had basically written off Berkeley. Pranav helped me figure out how to actually tell my story in the PIQs. I got in.",
     name: "Michelle L.",
-    detail: "UC Berkeley — Computer Science",
+    detail: "UC Berkeley, Computer Science",
   },
   {
     quote: "My son had no idea where to start. The roadmap Pranav made was incredibly clear. He got his TAG guarantee within weeks of starting.",
     name: "Parent, Sunnyvale",
-    detail: "UC Davis — Economics",
+    detail: "UC Davis, Economics",
   },
   {
     quote: "Worth every dollar. The PIQ coaching alone made my essays 10x better. Got into UCSD and UCLA.",
     name: "Kevin T.",
-    detail: "UC San Diego — Cognitive Science",
+    detail: "UC San Diego, Cognitive Science",
   },
   {
     quote: "I came to Pranav with a 3.1 GPA feeling like the window had closed. He helped me position my story the right way and I got two UC acceptances.",
     name: "Jason M.",
-    detail: "UC Santa Barbara — Sociology",
+    detail: "UC Santa Barbara, Sociology",
   },
   {
     quote: "As a parent who didn't go through American college admissions, I had so many questions. Pranav was patient, clear, and genuinely helpful.",
     name: "Parent, Sunnyvale",
-    detail: "UC Irvine — Biology",
+    detail: "UC Irvine, Biology",
   },
   {
-    quote: "Unlike the big companies, you actually talk to Pranav. He knows De Anza's curriculum cold — that made a real difference in my planning.",
+    quote: "Unlike the big companies, you actually talk to Pranav. He knows De Anza's curriculum cold. That made a real difference in my planning.",
     name: "Tiffany W.",
-    detail: "UC San Diego — Global Studies",
+    detail: "UC San Diego, Global Studies",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function Testimonials() {
         {/* Cohort availability */}
         <div className="mb-10 inline-flex items-center gap-3 border border-[#7a9e7e]/40 bg-[#7a9e7e]/10 rounded-full px-5 py-2.5">
           <span className="w-2 h-2 rounded-full bg-[#7a9e7e] animate-pulse shrink-0" />
-          <span className="text-sm text-[#3a5e3e] font-medium">Fall 2026 Cohort — Now Accepting 4 Clients (Aug–Dec, +Feb for out-of-state)</span>
+          <span className="text-sm text-[#3a5e3e] font-medium">Fall 2026 Cohort: Now Accepting 4 Clients (Aug–Dec, +Feb for out-of-state)</span>
         </div>
 
         <h2 className="font-serif text-5xl md:text-6xl font-semibold text-[#2a1408] mb-14 leading-[0.95]">
@@ -71,7 +71,7 @@ export default function Testimonials() {
                 </div>
                 <div>
                   <span className={`font-medium text-sm ${i === 0 ? "text-[#c4714a]" : "text-[#2a1408]"}`}>{t.name}</span>
-                  <span className={`text-sm ml-2 ${i === 0 ? "text-[#c9b8a8]" : "text-[#b0927a]"}`}>— {t.detail}</span>
+                  <span className={`text-sm ml-2 ${i === 0 ? "text-[#c9b8a8]" : "text-[#b0927a]"}`}>· {t.detail}</span>
                 </div>
               </div>
             </div>

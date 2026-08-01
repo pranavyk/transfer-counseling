@@ -53,22 +53,22 @@ export default function About() {
                 I graduated high school with a 2.7 GPA. By the skin of my teeth.
               </p>
               <p>
-                Not because I wasn&apos;t capable — I just didn&apos;t have a system. High school felt like something happening to me, not something I was navigating with any intention.
+                Not because I wasn&apos;t capable. I just didn&apos;t have a system. High school felt like something happening to me, not something I was navigating with any intention.
               </p>
               <p>
                 When my results came in, the message was clear: the traditional four-year path wasn&apos;t going to happen right away. And I had a choice about how to look at that.
               </p>
               <p>
-                What I found when I actually looked at community college changed how I think about the whole thing. The UC transfer system is genuinely one of the best-designed educational pathways in the country. IGETC, TAG guarantees, articulation agreements — these aren&apos;t backdoors. They&apos;re official channels that reward students who understand how to use them. The problem is that almost nobody teaches you this. The students who need it most are the least likely to figure it out on their own.
+                What I found when I actually looked at community college changed how I think about the whole thing. The UC transfer system is genuinely one of the best-designed educational pathways in the country. IGETC, TAG guarantees, articulation agreements. These aren&apos;t backdoors. They&apos;re official channels that reward students who understand how to use them. The problem is almost nobody teaches you this. The students who need it most are the least likely to figure it out on their own.
               </p>
               <p>
-                So I learned it. I enrolled at De Anza. Then Foothill. Eventually five colleges total — not by accident, but on purpose. Each one gave me access to specific courses, articulation agreements, and advantages the others didn&apos;t. I mapped everything: which classes counted toward which UC major, which campus and major combinations gave me the best odds, where I could build the strongest possible transfer application at the lowest cost.
+                So I learned it. I enrolled at De Anza. Then Foothill. Eventually five colleges total, not by accident but on purpose. Each one gave me access to specific courses, articulation agreements, and advantages the others didn&apos;t. I mapped everything: which classes counted toward which UC major, which campus and major combinations gave me the best odds, where I could build the strongest possible transfer application at the lowest cost.
               </p>
               <p>
                 I got into <strong className="text-[#2a1408]">UC Berkeley, UCSD, UIUC, and two other top programs</strong>. I chose UCSD, Math and CS, Class of 2026, because it was the right call for where I wanted to go.
               </p>
               <p>
-                The reason I started doing this professionally is almost accidental. I started helping friends. Casually, over text. A friend with a 3.1 GPA who&apos;d convinced himself Berkeley was off the table. A parent who couldn&apos;t parse the UC application. I&apos;d walk them through it the same way I wished someone had walked me through it — plainly, with real context about what actually matters and what doesn&apos;t.
+                The reason I started doing this professionally is almost accidental. I started helping friends. Casually, over text. A friend with a 3.1 GPA who&apos;d convinced himself Berkeley was off the table. A parent who couldn&apos;t parse the UC application. I&apos;d walk them through it the same way I wished someone had walked me through it: plainly, with real context about what actually matters and what doesn&apos;t.
               </p>
               <p>
                 They got in. Multiple times. To schools they&apos;d written off.
@@ -94,7 +94,7 @@ export default function About() {
               },
               {
                 heading: "Berkeley, UCSD & UIUC admit",
-                body: "As a transfer, not a freshman. I know what the application looks like from a CC student's perspective — including the parts no one talks about.",
+                body: "As a transfer, not a freshman. I know what the application looks like from a CC student's perspective, including the parts no one talks about.",
               },
               {
                 heading: "UCSD Math + CS, Class of 2026",
@@ -102,7 +102,7 @@ export default function About() {
               },
               {
                 heading: "Sunnyvale local, 5-college strategy",
-                body: "De Anza, Foothill, and three others — used deliberately to build the strongest possible application at the lowest cost.",
+                body: "De Anza, Foothill, and three others. Used deliberately to build the strongest possible application at the lowest cost.",
               },
               {
                 heading: "One-on-one, limited spots",

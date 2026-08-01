@@ -10,7 +10,7 @@ export default function Hero() {
           <p className="text-xs text-[#b0927a] tracking-widest uppercase">UC Transfer Counseling · Sunnyvale, CA</p>
           <div className="hidden md:flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-[#7a9e7e] animate-pulse" />
-            <span className="text-xs text-[#7a9e7e] font-medium tracking-wide">Fall 2026 Cohort — Now Accepting 4 Clients</span>
+            <span className="text-xs text-[#7a9e7e] font-medium tracking-wide">Fall 2026 Cohort: Now Accepting 4 Clients</span>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ export default function Hero() {
         {/* Divider + subtext */}
         <div className="mt-8 md:mt-6 pt-8 border-t border-[#2a1408]/10 grid md:grid-cols-2 gap-8 items-end">
           <p className="text-[#8a6050] text-lg leading-relaxed">
-            I&apos;m Pranav — I was accepted to UC Berkeley, UCSD, UIUC, and two other top programs by spreading coursework across 5 colleges to transfer affordably with every possible advantage. Now I help Bay Area students do the same, one-on-one.
+            I&apos;m Pranav. I got into UC Berkeley, UCSD, UIUC, and two other top programs by deliberately spreading coursework across 5 colleges to stack every advantage the system allows. Now I help Bay Area students do the same thing, one-on-one.
           </p>
           <div className="flex flex-col gap-4">
             <blockquote className="font-serif text-xl italic text-[#2a1408]/70 leading-snug">
@@ -63,7 +63,7 @@ export default function Hero() {
             {/* Mobile cohort badge */}
             <div className="md:hidden flex items-center gap-2 mt-1">
               <span className="w-2 h-2 rounded-full bg-[#7a9e7e] animate-pulse" />
-              <span className="text-xs text-[#7a9e7e] font-medium">Fall 2026 Cohort — 4 spots open</span>
+              <span className="text-xs text-[#7a9e7e] font-medium">Fall 2026 Cohort: 4 spots open</span>
             </div>
             {/* Mobile photo */}
             <div className="md:hidden mt-2">

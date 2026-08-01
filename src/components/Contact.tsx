@@ -32,8 +32,8 @@ export default function Contact() {
               Let&apos;s figure<br />out your<br /><span className="italic">path.</span>
             </h2>
             <p className="text-[#8a6050] leading-relaxed mb-8">
-              Fill this out and I&apos;ll reach out within 24 hours — usually same day.
-              The first call is free and there&apos;s no pressure to commit to anything.
+              Fill this out and I&apos;ll reach out within 24 hours. Usually same day.
+              First call is free, no pressure to commit to anything.
             </p>
 
             <div className="space-y-6">
@@ -119,9 +119,9 @@ export default function Contact() {
                     onChange={(e) => setForm({ ...form, service: e.target.value })}
                   >
                     <option value="">Select a package</option>
-                    <option value="starter">Starter Session — $299</option>
-                    <option value="full">Full Application — $899</option>
-                    <option value="premium">Full Year — $1,999</option>
+                    <option value="starter">Starter Session ($299)</option>
+                    <option value="full">Full Application ($899)</option>
+                    <option value="premium">Full Year ($1,999)</option>
                     <option value="unsure">Not sure yet</option>
                   </select>
                 </div>
@@ -130,7 +130,7 @@ export default function Contact() {
                   <textarea
                     rows={4}
                     className="w-full border border-[#e8d5b5] rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7ab4d4] bg-[#faf7f0] resize-none"
-                    placeholder="Current school, intended major, target UCs, GPA, timeline — whatever feels relevant."
+                    placeholder="Current school, intended major, target UCs, GPA, timeline. Whatever feels relevant."
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
                   />
