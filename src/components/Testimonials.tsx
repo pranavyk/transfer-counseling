@@ -5,14 +5,9 @@ const testimonials = [
     detail: "UC Berkeley, Computer Science",
   },
   {
-    quote: "My son had no idea where to start. The roadmap Pranav made was incredibly clear. He got his TAG guarantee within weeks of starting.",
-    name: "Parent, Sunnyvale",
+    quote: "My son had no idea where to start. The roadmap Pranav made was incredibly clear. He was able to set up his TAG admission guarantee to Davis within two weeks of starting.",
+    name: "Parent, Santa Clara, CA",
     detail: "UC Davis, Economics",
-  },
-  {
-    quote: "Worth every dollar. The PIQ coaching alone made my essays 10x better. Got into UCSD and UCLA.",
-    name: "Kevin T.",
-    detail: "UC San Diego, Cognitive Science",
   },
   {
     quote: "I came to Pranav with a 3.1 GPA feeling like the window had closed. He helped me position my story the right way and I got two UC acceptances.",
@@ -61,18 +56,9 @@ export default function Testimonials() {
               }`}>
                 &ldquo;{t.quote}&rdquo;
               </p>
-              <div className="flex flex-col gap-1">
-                <div className="flex shrink-0">
-                  {Array.from({ length: 5 }).map((_, j) => (
-                    <svg key={j} className="w-3.5 h-3.5 text-[#c4714a]" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <div>
-                  <span className={`font-medium text-sm ${i === 0 ? "text-[#c4714a]" : "text-[#2a1408]"}`}>{t.name}</span>
-                  <span className={`text-sm ml-1.5 ${i === 0 ? "text-[#c9b8a8]" : "text-[#b0927a]"}`}>· {t.detail}</span>
-                </div>
+              <div>
+                <span className={`font-medium text-sm ${i === 0 ? "text-[#c4714a]" : "text-[#2a1408]"}`}>{t.name}</span>
+                <span className={`text-sm ml-1.5 ${i === 0 ? "text-[#c9b8a8]" : "text-[#b0927a]"}`}>· {t.detail}</span>
               </div>
             </div>
           ))}
