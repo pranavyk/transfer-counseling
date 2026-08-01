@@ -21,8 +21,8 @@ const testimonials = [
   },
   {
     quote: "Unlike the big companies, you actually talk to Pranav. He knows De Anza's curriculum cold. That made a real difference in my planning.",
-    name: "Tiffany W.",
-    detail: "UC San Diego, Global Studies",
+    name: "Neel D.",
+    detail: "UC San Diego, Business Economics",
   },
 ];
 
