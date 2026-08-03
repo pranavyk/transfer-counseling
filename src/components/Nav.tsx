@@ -20,7 +20,7 @@ export default function Nav() {
               return <circle key={i} cx={24+22*Math.cos(a)} cy={24+22*Math.sin(a)} r="1.5" fill="currentColor"/>;
             })}
           </svg>
-          P2<span className="text-[#7ab4d4]">Transfers</span>
+          <span>P2<span className="text-[#7ab4d4]">Transfers</span></span>
         </a>
         <div className="hidden md:flex items-center gap-8">
           <a href="/deadlines" className="text-sm text-[#c9b8a8] hover:text-[#faf7f0] transition-colors">Timelines</a>
