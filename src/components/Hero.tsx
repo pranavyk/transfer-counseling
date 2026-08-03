@@ -31,7 +31,7 @@ export default function Hero() {
                   src="/pranav.jpg"
                   alt="Pranav"
                   fill
-                  className="object-cover object-center saturate-125 brightness-90"
+                  className="object-cover object-top saturate-110 brightness-95"
                   priority
                 />
               </div>
@@ -67,7 +67,7 @@ export default function Hero() {
               <div className="relative w-48">
                 <div className="absolute -bottom-2 -right-2 w-full h-full rounded-xl bg-[#c4714a] z-0" />
                 <div className="relative z-10 rounded-xl ring-[3px] ring-[#2a1408] aspect-[3/4] overflow-hidden">
-                  <Image src="/pranav.jpg" alt="Pranav" fill className="object-cover object-center saturate-125 brightness-90" priority />
+                  <Image src="/pranav.jpg" alt="Pranav" fill className="object-cover object-top saturate-110 brightness-95" priority />
                 </div>
               </div>
             </div>
