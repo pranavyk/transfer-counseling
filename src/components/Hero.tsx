@@ -84,10 +84,6 @@ export default function Hero() {
             <span className="font-serif text-3xl font-semibold text-[#c4714a]">5</span>
             <span className="text-[#b0927a] text-sm ml-2">colleges leveraged</span>
           </div>
-          <div>
-            <span className="text-[#b0927a] text-sm">Specialized in </span>
-            <span className="text-[#2a1408] text-sm font-medium">CS · Math · CE · Cog Sci · Psych</span>
-          </div>
         </div>
 
       </div>

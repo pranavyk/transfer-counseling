@@ -39,8 +39,8 @@ export default function Contact() {
             <div className="space-y-6">
               <div>
                 <p className="text-xs text-[#b0927a] uppercase tracking-widest mb-1">Email</p>
-                <a href="mailto:pranavyk@gmail.com" className="text-[#2a1408] font-medium hover:text-[#7ab4d4] transition-colors">
-                  pranavyk@gmail.com
+                <a href="mailto:pranav@p2transfers.com" className="text-[#2a1408] font-medium hover:text-[#7ab4d4] transition-colors">
+                  pranav@p2transfers.com
                 </a>
               </div>
               <div>
@@ -143,7 +143,7 @@ export default function Contact() {
                   {status === "loading" ? "Sending..." : "Send message"}
                 </button>
                 {status === "error" && (
-                  <p className="text-red-500 text-sm text-center">Something went wrong. Email me directly at pranavyk@gmail.com</p>
+                  <p className="text-red-500 text-sm text-center">Something went wrong. Email me directly at pranav@p2transfers.com</p>
                 )}
               </form>
             )}
