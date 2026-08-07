@@ -60,7 +60,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="text-[#8a6050] text-sm max-w-xs">
-            All packages include a free 30-min intro call. Payment plans available on request.
+            All packages include a free 15-min intro call. Payment plans available on request.
           </p>
         </div>
 
@@ -103,6 +103,30 @@ export default function Services() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Free consultation callout */}
+        <div className="mt-12 rounded-2xl bg-[#2a1408] p-8 md:p-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-2 h-2 rounded-full bg-[#7a9e7e] animate-pulse shrink-0" />
+              <span className="text-xs text-[#7a9e7e] font-medium uppercase tracking-widest">Free, no commitment</span>
+            </div>
+            <h3 className="font-serif text-3xl md:text-4xl font-semibold text-[#f0e8d8] leading-tight mb-3">
+              Not sure where to start?
+            </h3>
+            <p className="text-[#c9b8a8] text-sm leading-relaxed">
+              Book a free 15-minute consultation. We&apos;ll talk through your GPA, your target campuses, and whether working together makes sense. No pressure to commit to anything.
+            </p>
+          </div>
+          <a
+            href="https://calendly.com/pranavyk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#7ab4d4] text-[#1e1208] text-sm px-7 py-3.5 font-semibold hover:bg-[#8fc4e4] transition-colors rounded-full shrink-0 text-center whitespace-nowrap"
+          >
+            Book 15-min call →
+          </a>
         </div>
 
       </div>
