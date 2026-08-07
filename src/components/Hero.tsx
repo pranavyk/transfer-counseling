@@ -46,7 +46,7 @@ export default function Hero() {
         {/* Divider + subtext */}
         <div className="mt-8 md:mt-6 pt-8 border-t border-[#2a1408]/10 grid md:grid-cols-2 gap-8 items-end">
           <p className="text-[#8a6050] text-lg leading-relaxed">
-            I&apos;m Pranav. I got into UC Berkeley, UCSD, UIUC, and two other top programs by deliberately spreading coursework across 5 colleges to stack every advantage the system allows. Now I help Bay Area students do the same thing, one-on-one.
+            I&apos;m Pranav. I got into UC Berkeley, UCSD, UIUC, and two other top programs by deliberately spreading coursework across 5 colleges to stack every advantage the system allows. Now I help current students do the same thing, one-on-one.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex gap-3 flex-wrap">
